@@ -71,3 +71,8 @@ a {
 #menu button:hover a {
     color: #07366e;
 }
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-color: lightgray;
+  }

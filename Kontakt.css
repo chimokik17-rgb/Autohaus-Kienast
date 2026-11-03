@@ -99,3 +99,8 @@ iframe {
 #fußteil p {
     margin: 0;
 }
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-color: lightgray;
+  }
