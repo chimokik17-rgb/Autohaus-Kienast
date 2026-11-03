@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Autohaus Kienast - Preisrechner</title>
+
+    <link rel="stylesheet" href="Preisrechner.css">
+    <script src="Preisrechner.js" defer></script>
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul>
+            <button><li><a href="index.html">Startseite</a></li></button>
+            <button><li><a href="Fahrzeuge.html">Fahrzeuge</a></li></button>
+            <button><li><a href="Kontakt.html">Kontakt</a></li></button>
+            <button><li><a href="Preisrechner.html">Preisrechner</a></li></button>
+            <button><li><a href="Impressum.html">Impressum</a></li></button>
+        </ul>
+    </div>
+
+    <header>
+        <h1>MERCEDES-BENZ</h1>
+        <p>Autohaus Kienast - Fahrzeug-Preisrechner</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Fahrzeug konfigurieren</h2>
+
+            <label>Mercedes-Modell</label>
+            <select id="model">
+                <option value="Mercedes-Benz A-Klasse">A-Klasse</option>
+                <option value="Mercedes-Benz C-Klasse" selected>C-Klasse</option>
+                <option value="Mercedes-Benz E-Klasse">E-Klasse</option>
+                <option value="Mercedes-Benz S-Klasse">S-Klasse</option>
+                <option value="Mercedes-AMG GT">AMG GT</option>
+                <option value="Mercedes-Benz G-Klasse">G-Klasse</option>
+            </select>
+
+            <label>Grundpreis in Euro</label>
+            <input type="number" id="basePrice" readonly>
+
+            <label>Fahrzeugzustand</label>
+            <select id="condition">
+                <option value="0.35">Unfallfahrzeug - 35 %</option>
+                <option value="0.55">Stark gebraucht - 55 %</option>
+                <option value="0.70">Normal gebraucht - 70 %</option>
+                <option value="0.85" selected>Gepflegt - 85 %</option>
+                <option value="1.00">Neuwertig - 100 %</option>
+            </select>
+
+            <label>Qualitätsklasse</label>
+            <select id="quality">
+                <option value="0.90">Basis - 90 %</option>
+                <option value="1.00" selected>Premium - 100 %</option>
+                <option value="1.25">Luxus - 125 %</option>
+            </select>
+
+            <label>Reparaturkosten in Euro</label>
+            <input type="number" id="repairs" value="0">
+
+            <label>Preisaufschlag</label>
+            <input type="text" value="20 %" disabled>
+
+            <button id="calculate">Preis berechnen</button>
+        </section>
+
+        <section class="card">
+            <h2>Dein Verkaufspreis</h2>
+
+            <div class="result">
+
+                <div id="resultModel">Mercedes-Benz C-Klasse</div>
+
+                <div class="price" id="salePrice">43.828 €</div>
+
+                <div>Berechneter Verkaufspreis</div>
+
+                <div class="details">
+
+                    <div>
+                        <span>Grundpreis nach Zustand und Qualität</span>
+                        <span id="adjustedPrice">36.535 €</span>
+                    </div>
+
+                    <div>
+                        <span>Reparaturkosten</span>
+                        <span id="repairOutput">0 €</span>
+                    </div>
+
+                    <div>
+                        <span>Preisaufschlag</span>
+                        <span id="marginOutput">7.307 €</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <p class="hint">
+                Die Grundpreise orientieren sich an den Neuwagen-Einstiegspreisen.
+                Die berechneten Verkaufspreise sind Beispielwerte.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        Autohaus Kienast - Preisrechner
+    </footer>
+
+</body>
+</html>

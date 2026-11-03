@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+header {
+    background: #0878f9;
+    color: orange;
+    padding: 20px;
+}
+
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+h2 {
+    color: #07366e;
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+}
+
+
+#calculate {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #0878f9;
+    color: white;
+    border: none;
+}
+
+
+.result {
+    background: #f2f5fa;
+    padding: 15px;
+}
+
+.price {
+    color: #0878f9;
+    font-size: 30px;
+}
+
+
+footer {
+    background: #07366e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+#menu ul {
+    margin: 0;
+    padding: 12px 10px 0 25px;
+    list-style: none;
+}
+
+
+#menu button {
+    display: block;
+    width: 145px;
+    margin-bottom: 10px;
+    padding: 0;
+    background: #064da8;
+    border: 1px solid #3d91ed;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    transition: all 0.2s ease;
+}
+
+#menu button li {
+    list-style: none;
+    padding: 0;
+}
+
+#menu button a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px 14px;
+}
+
+
+#menu button:hover {
+    background: #ffab00;
+    border-color: #ffffff;
+    transform: translateX(4px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#menu button:hover a {
+    color: #07366e;
+}
